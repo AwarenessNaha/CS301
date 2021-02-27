@@ -13,7 +13,7 @@ is prime loop will proceed until the end.
 
 "use strict";
 let prompt= require('prompt-sync')();
-let number = + prompt("enter number ");
+let number = +prompt("enter number ");
 // a. Your logic should be based on factor count.
 let factorsCount = 0;
 for(let i=2; i <= (number/2); i++){
