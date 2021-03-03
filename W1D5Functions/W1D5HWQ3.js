@@ -14,12 +14,12 @@ let  height= +prompt("enter height ");
 let  depth= +prompt("enter depth ");
 let  sweep= +prompt("enter sweep ");
 
-function s(width,sweep){
-    return (width+2*sweep)/2;
+function getsS(width,sweep){
+    return ((width+2*sweep)/2);
 }
 
  function triangleArea(s,sweep,width){
-let triangleArea = Math.sqrt(s(s-sweep)(s-sweep)(s-width));
+let triangleArea = Math.sqrt(s(s-sweep)*(s-sweep)*(s-width));
 return triangleArea;
 }
 
@@ -38,11 +38,11 @@ function houseVolume (livingVolume, roofVolume) {
     return houseVolume;
 }
 
-//console.log(houseVolume (livingVolume(width, height, depth), roofVolume(triangleArea(s(width,sweep),sweep,width),depth)));
+console.log(houseVolume (livingVolume(width, height, depth), roofVolume(triangleArea(s(width,sweep),sweep,width),depth)));
 
 
-let s1 = s(width,sweep);
-console.log(s(width,sweep));
+let s1 = getS(width,sweep);
+console.log(getS(width,sweep));
 console.log(s1);
 /*
 let triangleArea = triangleArea(s,sweep,width);
