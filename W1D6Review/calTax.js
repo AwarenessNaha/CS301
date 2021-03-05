@@ -19,3 +19,5 @@ For e.g., if the gross salary is 70K that person will pay 1500+ 10% of 20K = $35
  }
  }
  console.log("Your federal tax is  " + calTax(salary));
+ 
+ 
