@@ -10,7 +10,7 @@ exports.rotateNRight = rotateNRight;
 exports.filterNegtive = filterNegtive;
 exports.filterRange = filterRange;
 exports.filterPalindromes = filterPalindromes;
-
+exports.matrixAddition = matrixAddition;
 /**
  * 
  * @param {array} arr an array of numbers

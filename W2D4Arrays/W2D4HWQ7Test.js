@@ -3,7 +3,7 @@
 const fun = require("./W2D4HWQ7.js");
 const assert = require("assert");
 
-/* 1a.	Write a function named checkPrime that accepts a parameter and returns true if the argument is a prime number otherwise returns false. */
+/*  */
 describe("filterRange", function () {
 
     it("filterRange test No.1", function () {
