@@ -110,14 +110,18 @@ describe("merge via shift and push", function () {
         //assert.deepStrictEqual(arrays.shiftPush([1, 3, 8], 4, []), [1, 3]);
         assert.deepStrictEqual(arrays.shiftPush([1, 3, 8], 4), [1, 3]);
     });
-
     it("138 merge with 059 ", function () {
         console.log(arrays.merge([1, 3, 8], [0, 5, 9]));
         assert.deepStrictEqual(arrays.merge([1, 3, 8], [0, 5, 9]), [0, 1, 3, 5, 8, 9]);
     });
 
-    it("138 merge with 059 mergeTwo ", function () {
-        console.log(arrays.mergeTwo([1, 3, 8], [0, 5, 9]));
-        assert.deepStrictEqual(arrays.mergeTwo([1, 3, 8], [0, 5, 9]), [0, 1, 3, 5, 8, 9]);
-    });
+    //it("138 merge with 059 ", function () {
+    // console.log(arrays.merge([1, 3, 8], [0, 5, 9]));
+    //assert.deepStrictEqual(arrays.merge([1, 3, 8], [0, 5, 9]), [0, 1, 3, 5, 8, 9]);
+    //});
+
+    //it("138 merge with 059 mergeTwo ", function () {
+    //console.log(arrays.mergeTwo([1, 3, 8], [0, 5, 9]));
+    //assert.deepStrictEqual(arrays.mergeTwo([1, 3, 8], [0, 5, 9]), [0, 1, 3, 5, 8, 9]);
+    //});
 });

@@ -1,25 +1,40 @@
 // eslint-disable-next-line strict
 "use restrict";
 
-//Q5 solution1
+
+//04
 /**
  * 
- * @param {array} arr a given array
- * @returns {array} a reversed array
+ * @param {string} str a given string
+ * @returns {boolean} true or false
  */
-function ssReverse(arr) {
-    let reversedArr = arr.slice();
-    console.log(reversedArr);
-    let index = 0;
-    const len = arr.length - 1;
-    for (let i = len; i >= 0; i--) {
-        const element = arr.splice(i, 1);
-        let element1 = element[0];
-        reversedArr.splice(index, 1, element1);
-        index++;
+function checkSpam1(str) {
+    while (str !== "") {
+        let index = str.indexOf(" ");
+        let word = str.substr(0, index);
+        str = str.substr(index);
+        if (word === "lottery" || word === "prize") {
+            return true;
+        } else {
+            return false;
+        }
     }
-    return reversedArr;
+}
+/**
+ * 
+ * @param {string} str a
+ * @returns {boolean} true or false
+ */
+function checkSpam(str) {
+    const wordArray = str.split(" ");
+    for (const word of wordArray) {
+        if (word === "lottery" || word === "prize") {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
 
-console.log(ssReverse([1, 2, 3, 4]));
-console.log();
+console.log(checkSpam("there is a prize in the lottery"));
+console.log(checkSpam("there is a nothing in the fridge"));
