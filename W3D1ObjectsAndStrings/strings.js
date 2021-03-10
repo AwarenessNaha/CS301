@@ -46,21 +46,21 @@ function countProperties(obj) {
  * @param {string} str a given string
  * @returns {boolean} true or false
  */
-function checkSpam1(str) {
-    for (let key in str) {
-        if (str[key] === "lottery" || str[key] === "prize") {
-            return true;
-        } else if (str[key] !== "lottery" && str[key] !== "prize") {
-            return false;
-        }
-    }
+function checkSpam(str) {
+
+    if (str.includes("lottery") || str.includes("prize")) {
+        return true;
+    } else
+        return false;
 }
+
+
 /**
  * 
  * @param {string} str a
  * @returns {boolean} true or false
  */
-function checkSpam(str) {
+function checkSpam1(str) {
     const wordArray = str.split(" ");
     for (const word of wordArray) {
         if (word === "lottery" || word === "prize") {
@@ -78,17 +78,18 @@ function checkSpam(str) {
  * @returns {string} a new string
  */
 function suffix(str1, str2) {
-    const minLength = Math.min(str1, str2);
-    let charCount = 0;
+    const minLength = Math.min(str1.length, str2.length);
+    let common = "";
     for (let i = 0; i < minLength; i++) {
         if (str1[str1.length - 1 - i] === str2[str2.length - 1 - i]) {
-            charCount++;
+            common = str1[str1.length - 1 - i] + common;
         } else {
             break;
         }
+        return common;
     }
-    return str1.substring(str1.length - charCount);
 }
+
 
 
 //Q6 
