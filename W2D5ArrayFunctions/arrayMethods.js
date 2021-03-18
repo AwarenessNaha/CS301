@@ -1,16 +1,16 @@
 // eslint-disable-next-line strict
 "use restrict";
 
-exports.insertArray = insertArray;
-exports.isArrayEqual = isArrayEqual;
-exports.isPalindrome = isPalindrome;
-exports.reverse2String = reverse2String;
-exports.enhancedIncludes = enhancedIncludes;
-exports.ssReverse = ssReverse;
-exports.shiftPush = shiftPush;
-exports.merge = merge;
-exports.mergeTwo = mergeTwo;
-exports.ssReverse1 = ssReverse1;
+// exports.insertArray = insertArray;
+// exports.isArrayEqual = isArrayEqual;
+// exports.isPalindrome = isPalindrome;
+// exports.reverse2String = reverse2String;
+// exports.enhancedIncludes = enhancedIncludes;
+// exports.ssReverse = ssReverse;
+// exports.shiftPush = shiftPush;
+// exports.merge = merge;
+// exports.mergeTwo = mergeTwo;
+// exports.ssReverse1 = ssReverse1;
 
 //Q0
 /**

@@ -16,3 +16,21 @@ do {
     input = input.toLowerCase();
     console.log()
 } while (input !== "stop");
+
+function reverseStringWords(str) {
+    const wordArray = str.split(",");
+    wordArray.reverse();
+    for (const word of wordArray) {
+        console.log(word);
+    }
+}
+
+function replace4(str) {
+    const findex = str.indexOf("for");
+    const substring1 = str.substr(0, findex);
+    const substring 2 = str.substr(findex + 3, str.length - 1);
+    return substring1 + 4 + substring2;
+}
+
+const substring = "   ";
+console.log(replace4(testStr));
